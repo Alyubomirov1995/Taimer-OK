@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_container __container">
+        <div class="header__title">
+          <div class="title__img">
+            <img src="image/pngwing.com (8).png" alt="logo" height="50px" />
+          </div>
+          <div class="title__text">Таймер'ОК</div>
+        </div>
+        <div class="header__menu"></div>
+      </div>
+    </header>
+    <article class="page__timer timer">
+      <div id="field" class="container">
+        <div class="section-container">
+          <button id="focus" class="btn btn-timer btn-focus">Работа</button>
+          <button id="shortbreak" class="btn btn-shortbreak" >
+            Короткий перерыв 
+          </button>
+          <button id="longbreak" class="btn btn-longbreak">Длинный перерыв</button>
+        </div>
+        <div class="time-btn-container">
+          <span id="time"></span>
+          <div class="btn-container">
+            <button id="btn-start" class="show">Старт</button>
+            <button id="btn-pause" class="hide">Пауза</button>
+            <button id="btn-reset" class="hide">
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
