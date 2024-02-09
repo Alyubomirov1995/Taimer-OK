@@ -39,6 +39,10 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body-focus {
+  background-color: blueviolet;
+}
+
 button {
   border: none;
   outline: none;

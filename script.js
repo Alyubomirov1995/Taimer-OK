@@ -6,11 +6,13 @@ const startBtn = document.getElementById("btn-start");
 const reset = document.getElementById("btn-reset");
 const pause = document.getElementById("btn-pause");
 const time = document.getElementById("time");
+const longContainer = document.getElementById("container-long");
+const middleContainer = document.getElementById("container-mid");
 let set;
 let active = "focus";
-const count = 59;
+let count = 59;
 let paused = true;
-const minCount = 24;
+let minCount = 24;
 time.textContent = `${minCount + 1}:00`;
 const appendZero = (value) => {
   value = value < 10 ? `0${value}` : value;
@@ -40,6 +42,7 @@ const removeFocus = () => {
     btn.classList.remove("btn-focus");
   });
 };
+
 
 focusButton.addEventListener("click", () => {
   document.body.style.backgroundColor = 'rgb(214, 96, 96)';
